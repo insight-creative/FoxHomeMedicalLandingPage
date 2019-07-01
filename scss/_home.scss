@@ -1,4 +1,18 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
+#greenBar {
+	position: absolute;
+	z-index: 9999;
+	width: 100%;
+	height: 48px;
+	left: 0px;
+	top: 0px;
+	background: linear-gradient(180deg, #237D3A 0%, #98C256 100%);
+}
+.logo {
+	max-width: 250px;
+	margin: 0 auto;
+	margin-bottom: 25px;
+}
 .heroHeadingWrap{
 	display: flex;
 	flex-direction: row;
@@ -7,8 +21,8 @@
 	align-items: center;
 	justify-content: center;
 }
-.homeHero{
-	background-image: url("/wp-content/uploads/2019/02/centerFeedAlleyLookingSouth2NoCrop.jpg");
+#homeHero{
+	background-image: url("/wp-content/uploads/2019/07/FoxHMS-Building.jpg");
 }
 .heroHeadingContainer{
 	display: flex;
@@ -18,228 +32,28 @@
 	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 20%, rgba(0,0,0,0.5) 50%, rgba(0, 0, 0, 0) 100%);
 	@include breakpoint(laptopScreen){
 		align-items: center;
-		background-image: linear-gradient(90deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,.7) 80%);
+		background-image: none;
 	}
 }
 .heroHeadingWrapper{
 	display: flex;
 	width: 100%;
 }
-#pageContent{
-	margin-top: 25px;
-	@include breakpoint (laptopScreen) {
-		margin-top: 0;
-	}
-}
 .heroHeading{
-	padding: 25px;
-	border-radius: 3px;
-    @include breakpoint(smallScreen){
-      padding: 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      padding: 50px;
-    }
-}
-#connectBack {
-	height: 500px;
-}
-#toursBack {
-	height: 500px;
-}
-.logo {
-	max-width: 450px;
-}
-.rightGradientOverlay{
-	display: flex;
-	height: 100%;
-	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
-	@include breakpoint(laptopScreen){
-		align-items: center;
-		background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 70%);
-	}
-}
-.leftGradientOverlay{
-	position: relative;
-	height: 100%;
-	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
-	@include breakpoint(laptopScreen){
-		align-items: center;
-		background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
-	}
-}
-.affiliateLogo {
-	width: 30%;
-	height: 100%;
-	padding: 10px;
-	@include breakpoint (largeMobileScreen) {
-		width: 25%;
-	}
-	@include breakpoint (tabletScreen) {
-		width: 12%;
-	}
-	@include breakpoint (extraLargeScreen) {
-		width: 8%;
-	}
-}
-#affiliateTitleWrap {
-	@media (min-width: 1800px) {
-		width: 50%;
-	}
-}
-#affiliationsTitle {
-	position: relative;
-	&:after {
-		position: absolute;
-		top: 40%;
-		right: 0;
-		content: "";
-		width: .5em;
-		height: 7px;
-		background-color: $primaryYellow;
-		@include breakpoint (largeMobileScreen) {
-			width: 1.5em;
-		}
-		@include breakpoint (tabletScreen) {
-			width: 5em;
-		}
-		@include breakpoint (laptopScreen) {
-			width: 7em;
-		}
-	}
-	&:before {
-		position: absolute;
-		top: 40%;
-		left: 0;
-		content: "";
-		width: .5em;
-		height: 7px;
-		background-color: $primaryYellow;
-		@include breakpoint (largeMobileScreen) {
-			width: 1.5em;
-		}
-		@include breakpoint (tabletScreen) {
-			width: 5em;
-		}
-		@include breakpoint (laptopScreen) {
-			width: 7em;
-		}
-	}
-}
-#affiliateWrapper {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
-}
-.featuredProjectOverlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	content: "";
-	transition: .2s ease all;
-	background-color: rgba(0,0,0,.4);
-}
-.featuredProjectImage{
-	width: 100%;
-	height: auto;
-	margin-bottom: -10px;
-}
-.featuredProjectTitle{
-	position: absolute;
-  width: 100%;
-  bottom: 0;
-  color: $white;
-  text-align: center;
-	h4{
-
-	}
-}
-.servicesWrapper{
-	margin: 0 auto;
-	@include breakpoint(smallScreen){
-		width: 100%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 100%;
-	}
-	@include breakpoint(largeScreen){
-		width: 90%;
-	}
-}
-.serviceImage{
-	height: auto;
-	@include breakpoint(smallScreen){
-		width: 60%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 40%;
-	}
-	@include breakpoint(tabletScreen){
-		width: 50%;
-	}
-	@include breakpoint(laptopScreen){
-		width: 80%;
-	}
-}
-.marginRight{
-	margin-right: 30px;
-}
-.smallPaddedWrapper{
 	padding: 20px;
 }
-.industryWrapper{
+#outerWrap {
 	display: flex;
-	flex-direction: row;
 }
-.CTAcontent{
-    @include breakpoint(smallScreen){
-      width: 90%;
-		  margin: 0 auto;
-		  text-align: center;
-		  padding: 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 90%;
-		  margin: 0 auto;
-		  text-align: center;
-		  padding: 20px;
-    }
-    @include breakpoint(laptopScreen){
-      width: 60%;
-    }
-		a{
-			color: $white;
-		}
-}
-.siteCTAWrap{
-	position: relative;
-	background-image: url("/wp-content/uploads/2018/12/welderWorkingInShopMedium.jpg");
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	padding: 50px 0 50px 0;
-		@include breakpoint(smallScreen){
-			height: 450px;
-		}
-		@include breakpoint(largeMobileScreen){
-			height: 400px;
-		}
-    a{
-      text-decoration: none;
-    }
-}
-.CTAWrapOverlay{
-	position: absolute;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0,.7);
-	z-index: 99;
-	content: "";
-	width: 100%;
-	height: 100%;
+#wrap {
 	display: flex;
 	align-items: center;
+	margin: 0 auto;
+}
+#crossImage {
+	width: 15%;
+	margin-right: 20px;
+}
+.noMargin {
+	margin-bottom: 0;
 }

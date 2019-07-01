@@ -5,17 +5,13 @@ input,
 select,
 optgroup,
 textarea {
-	color: $bodyCopyBlue;
+	color: $black;
 	font-family: $roboto;
-	font-size: 18px;
 	line-height: 1.6em;
-	@include breakpoint (largeMobileScreen) {
-		font-size: 20px;
-	}
+	font-size: 1.5em;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: $prometoMedium;
-	text-transform: uppercase;
+	font-family: $frankRuhlLibre;
 	line-height: 1.4em;
 	margin-top: 0;
 	margin-bottom: 25px;
@@ -25,121 +21,23 @@ p{
 	margin-bottom: 1em !important;
 }
 h1{
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 2em;
+	@include breakpoint (laptopScreen) {
+		font-size: 3em;
+	}
 }
 h2{
-	font-size: 1.6em;
-	font-weight: 700;
-}
-h3{
-	font-size: 1.4em;
-}
-h4{
-	font-size: 1.4em;
-}
-h5{
-	font-size: 1.1em;
-}
-h6{
-	font-size: .9em;
+	font-size: 2.2em;
+	font-weight: 500;
 }
 .whiteText{
 	color: $white;
 }
-.headlineText{
-	color: $headlineText;
-}
-.subheadText{
-	color: $subHeadText;
-}
-.redText{
-	color: $brandColor;
-}
 .centerText{
 	text-align: center;
 }
-.primaryHeading{
-	font-family: $prometoMedium;
-	text-transform: uppercase;
+.greenText {
+	color: $brandColor;
 	font-weight: 700;
-	margin-bottom: 0;
-	@include breakpoint(smallScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(tinyScreen){
-		font-size: 2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(largeScreen){
-		font-size: 4em;
-	}
-}
-.subHeading{
-	font-family: $prometoMedium;
-	text-transform: uppercase;
-	font-weight: 500;
-	margin-bottom: 0;
-	@include breakpoint(smallScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(tinyScreen){
-		font-size: 2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(largeScreen){
-		font-size: 4em;
-	}
-}
-.largeHeading{
-	font-size: 2em;
-	font-weight: 700;
-}
-.mediumHeading {
-	font-size: 1.6em;
-	font-weight: 700;
-}
-.subhead{
-	font-size: 1.4em;
-	font-weight: 500;
-}
-.smallHeading{
-	font-size: .8em;
-	margin-bottom: 0;
-}
-.noMargin{
-	margin: 0 !important;
-}
-.smallMargin{
-	margin-bottom: 15px;
-}
-.underline {
-	position: relative;
-	&:after {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		content: "";
-		background-color: $primaryYellow;
-		height: 7px;
-		width: 100%;
-	}
-}
-.centerUnderline{
-	content: "";
-	position: relative;
-	height: 3px;
-	width: 4em;
-	margin: 0 auto;
-	margin-top: 5px;
-  margin-bottom: 20px;
-	border-bottom: 3px solid $primaryYellow;
-	transition: .2s ease all;
-}
-.fontLight {
-	font-weight: 400;
 }

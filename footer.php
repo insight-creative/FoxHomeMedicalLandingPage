@@ -3,7 +3,6 @@
  * @package InsightCustom
  **/
 ?>
-
 </div><!-- #content -->
 	<footer id="colophon" class="site-footer">
 		<div class="footerContent navWidth">
@@ -17,19 +16,9 @@
 					</defs>
 				</svg>
 				<svg class="icon icon-copyright"><use xlink:href="#icon-copyright"></use></svg>
-				<p>&nbsp;<script>document.write(new Date().getFullYear());</script> Lamers Bus Lines, Inc.</p>
+				<p>&nbsp;<script>document.write(new Date().getFullYear());</script> Fox Home Medical & Supply. All Rights Reserved.</p>
 			</div>
-			<div id="footerLinks">
-				<div class="footerLinkWrap">
-					<?php
-					wp_nav_menu( array( 'theme_location' => 'FooterMenu', 'menu_id' => 'FooterMenu' ) );
-					get_search_form();
-					?>
-				</div>
-			</div>
-			<?php get_template_part("/inc/socialNav"); ?>
 	 </div>
-	 <script type="text/javascript" src="/wp-content/themes/insightCustom/js/slick-init.js"></script>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>

@@ -1,59 +1,8 @@
 /* 3.0 Our page layouts -------------------------------------------*/
-.col20{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 20%;
-    }
-}
-.col25{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 25%;
-    }
-}
-.col30{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 33.3333%;
-    }
-}
-.col30SplitTablet{
-	width: 100%;
-    @include breakpoint(largeMobileScreen){
-      width: 50%;
-    }
-    @include breakpoint(largeScreen){
-      width: 33.3333%;
-    }
-}
-.col40{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 40%;
-    }
-}
 .col50{
 	width: 100%;
     @include breakpoint(laptopScreen){
       width: 50%;
-    }
-}
-.col60{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 60%;
-    }
-}
-.col70{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 70%;
-    }
-}
-.col80{
-  width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 80%;
     }
 }
 .pageWidth{
@@ -78,17 +27,6 @@
 		width: 90%;
 	}
 }
-.blockText{
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	max-width: 800px;
-  margin: 0 auto;
-	padding: 0;
-    @include breakpoint(laptopScreen){
-      padding: 10px;
-    }
-}
 .hero{
 	position: relative;
 	z-index: 1;
@@ -96,24 +34,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 60vh;
-	background-position: center;
-		@include breakpoint(tabletScreen){
-      height: 90vh;
-			background-position: left;
-    }
-    @include breakpoint(laptopScreen){
-      height: 90vh;
-			background-position: left;
-    }
-	}
-.mediumHero{
-	position: relative;
-	z-index: 1;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 80vh;
+	background-position: left;
 }
 .flex-container{
 	display: flex;
@@ -121,57 +42,6 @@
     @include breakpoint(laptopScreen){
       flex-direction: row;
     }
-}
-.flex-container-reverse{
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: space-around;
-    @include breakpoint(laptopScreen){
-      flex-direction: row;
-    }
-}
-.flexWrap {
-	display: flex;
-	flex-direction: column;
-	align-items: baseline;
-	@include breakpoint (tabletScreen) {
-		flex-direction: row;
-	}
-}
-.flex-center {
-	justify-content: center;
-}
-.wrappedFlexContainer{
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-}
-.centerAlignedContainer{
-	display: flex;
-	align-items: center;
-}
-.centerAlignedContainerTop{
-	display: flex;
-	align-items: center;
-	@include breakpoint(laptopScreen){
-		align-items: flex-start;
-	}
-	@include breakpoint(largeScreen){
-		align-items: center;
-	}
-}
-.centeredContainer{
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	text-align: center;
-	flex-direction: column;
-}
-.textWrap{
-	padding: 0 10px;
-	@include breakpoint(tabletScreen) {
-		padding: 0 20px;
-	}
 }
 .image{
 	width: 100%;
@@ -185,35 +55,8 @@
 		max-width: 700px;
 	}
 }
-.centerTextBlock {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-.greyBlock{
-	background: $lightGrey;
-}
-.page-content{
-	position: relative;
-	z-index: 2;
-	margin-top: 50px;
-	background: $white;
-}
 .paddedSection{
 	padding: 50px 0;
-}
-.smallPaddedSection{
-	padding: 25px 0 25px 0;
-	@include breakpoint(laptopScreen){
-		padding: 50px 0 50px 0;
-	}
-}
-.tinyPaddedSection{
-	padding: 5px 0;
-}
-.paddedContainer{
-	padding: 2em 0;
 }
 .limitWidth{
   max-width: 1050px;
@@ -222,39 +65,4 @@
 	@include breakpoint(laptopScreen){
 		padding: 20px;
 	}
-}
-.limitPortfolioWidth{
-	max-width: 1350px;
-  margin: 0 auto;
-	padding: 50px 20px 0 20px;
-	@include breakpoint(laptopScreen){
-		padding: 20px;
-	}
-}
-.defaultPadding{
-	padding: 50px 0;
-	@include breakpoint(laptopScreen){
-		padding: 150px 0;
-	}
-}
-.removeBottomPadding{
-	padding-bottom: 0;
-}
-.site-content{
-	margin-top: 70px;
-	@include breakpoint (largeMobileScreen) {
-		margin-top: 100px;
-	}
-	@include breakpoint(laptopScreen){
-		margin-top: 140px;
-	}
-}
-.marginTop{
-	margin-top: 10px;
-}
-.removeBottomMargin {
-	margin-bottom: -10px;
-}
-.heroIntro {
-	margin-bottom: -10px;
 }
