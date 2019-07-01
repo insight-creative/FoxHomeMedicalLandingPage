@@ -48,8 +48,8 @@
 								of medical supplies. From <span class="greenText">mobility</span> products and <span class="greenText">home medical</span> supplies to
 								<span class="greenText">breastfeeding</span>
 								accessories and <span class="greenText">mastectomy</span> supplies, our new cash-only retail space will offer walk-in customers
-								the ability to see, try and fit products on-site with the assistance of trained, expert
-								<span class="greenText">medical professionals</span>. Customers can look forward to a personal approach, expert
+								the ability to see, try and fit products on-site with the assistance of <span class="greenText">trained, expert
+								medical professionals</span>. Customers can look forward to a personal approach, expert
 								knowledge, <span class="greenText">FREE same-day delivery</span> and <span class="greenText">fair prices</span>.
 							</p>
 							<p>
