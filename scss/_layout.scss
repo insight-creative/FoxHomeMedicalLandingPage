@@ -1,4 +1,4 @@
-/* 3.0 Our page layouts -------------------------------------------*/
+/* 4.0 Our page layouts -------------------------------------------*/
 .col50{
 	width: 100%;
     @include breakpoint(laptopScreen){
@@ -37,10 +37,18 @@
 	background-position: left;
 }
 .flex-container{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
     @include breakpoint(laptopScreen){
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
     }
 }
 .image{
@@ -49,8 +57,13 @@
 }
 .textBlock{
 	max-width: 1000px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 	@include breakpoint (laptopScreen) {
 		max-width: 700px;
 	}

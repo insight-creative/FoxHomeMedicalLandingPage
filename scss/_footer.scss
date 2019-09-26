@@ -1,4 +1,4 @@
-/* 5.0 Footer Stylings -------------------------------------------*/
+/* 6.0 Footer Stylings -------------------------------------------*/
 .site-footer{
 	position: relative;
 	z-index: 2;
@@ -13,14 +13,21 @@
 }
 #copyright{
 	font-size: 14px;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: 2px;
 		p{
 			margin-top: 0;
 			margin-bottom: 0 !important;
 		}
     @include breakpoint(largeScreen){
-      flex-direction: row;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
     }
 }

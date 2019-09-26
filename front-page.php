@@ -17,7 +17,7 @@
 						<div class="col50">
 							<div class="heroHeading">
 								<div class="whiteText textBlock centerText">
-									<h1>Coming Soon...</h1>
+									<h1>Opening October 31, 2019</h1>
 									<img src="/wp-content/uploads/2019/07/FoxHMS-REV-4c-2.png" class="img logo">
 									<p>
 										330 N. Broadway<br>
@@ -45,17 +45,28 @@
 						<div class="limitWidth">
 							<p>
 								<span class="greenText">Fox Home Medical & Supply, LLC</span> will be the area’s local source for an extensive variety
-								of medical supplies. From <span class="greenText">mobility</span> products and <span class="greenText">home medical</span> supplies to
-								<span class="greenText">breastfeeding</span>
-								accessories and <span class="greenText">mastectomy</span> supplies, our new cash-only retail space will offer walk-in customers
-								the ability to see, try and fit products on-site with the assistance of <span class="greenText">trained, expert
-								medical professionals</span>. Customers can look forward to a personal approach, expert
+								of medical supplies. From <span class="greenText">mobility</span> products to <span class="greenText">home medical</span> supplies,
+                our new cash-only retail space will offer walk-in customers the ability to see, try and fit products on-site. Customers can look forward to a personal approach, expert
 								knowledge, <span class="greenText">FREE same-day delivery</span> and <span class="greenText">fair prices</span>.
 							</p>
+              <ul>
+                <li>Lift chairs</li>
+                <li>Scooters</li>
+                <li>Bathroom equipment</li>
+                <li>Incontinence supplies</li>
+                <li>Stair glides</li>
+                <li>Ramps</li>
+                <li>Walkers</li>
+              </ul>
 							<p>
 								For more information regarding Fox Home Medical & Supply, our products or the upcoming
 								grand opening, please contact us at <a href="tel:920-393-6547">920-393-6547</a>.
 							</p>
+              <p>
+                <h3 class="centerText">Important</h3>
+                <span class="greenText">Notice to Health Insurance Beneficiaries:</span>
+                Fox Home Medical & Supply, LLC does not file claims with any health insurance companies for its products sold. <span class="greenText">You will be personally and fully responsible for payment.</span>
+              </p>
 						</div>
 					</div>
 				</div>

@@ -12,6 +12,15 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="/wp-content/uploads/2019/07/favicon.png" rel="shortcut icon">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-13074741-53"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-13074741-53');
+	</script>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

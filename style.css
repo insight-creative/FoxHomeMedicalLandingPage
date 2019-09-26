@@ -9,6 +9,7 @@ License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: insightcustom
 */
+/* 1.0 Normalize ----------------------------------------------*/
 /*--------------------------------------------------------------
 # Normalize
 --------------------------------------------------------------*/
@@ -81,6 +82,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
+  -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */ }
 
@@ -310,15 +312,15 @@ template {
 [hidden] {
   display: none; }
 
-/* 1.0 sitewide variables -------------------------------------------*/
+/* 2.0 sitewide variables -------------------------------------------*/
 /*******************************************************************
 Color Variables
 *******************************************************************/
 /*******************************************************************
 Font Variables
 *******************************************************************/
-/* 2.0 Define mobile breakpoints for our site ----------------------*/
-/* 3.0 Our page layouts -------------------------------------------*/
+/* 3.0 Define mobile breakpoints for our site ----------------------*/
+/* 4.0 Our page layouts -------------------------------------------*/
 .col50 {
   width: 100%; }
   @media (min-width: 992px) {
@@ -357,10 +359,18 @@ Font Variables
   background-position: left; }
 
 .flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
   @media (min-width: 992px) {
     .flex-container {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row; } }
 
 .image {
@@ -369,7 +379,12 @@ Font Variables
 
 .textBlock {
   max-width: 1000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
   flex-direction: column; }
   @media (min-width: 992px) {
     .textBlock {
@@ -386,7 +401,7 @@ Font Variables
     .limitWidth {
       padding: 20px; } }
 
-/*4.0 Header Styling -------------------------------------------*/
+/*5.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent {
   position: absolute;
   top: -100px; }
@@ -406,7 +421,7 @@ Font Variables
     text-decoration: none;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6); }
 
-/* 5.0 Footer Stylings -------------------------------------------*/
+/* 6.0 Footer Stylings -------------------------------------------*/
 .site-footer {
   position: relative;
   z-index: 2;
@@ -418,7 +433,11 @@ Font Variables
 
 #copyright {
   font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-top: 2px; }
   #copyright p {
@@ -426,9 +445,12 @@ Font Variables
     margin-bottom: 0 !important; }
   @media (min-width: 1250px) {
     #copyright {
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
       flex-direction: row; } }
 
-/* 6.0 Site Typography -------------------------------------------*/
+/* 7.0 Site Typography -------------------------------------------*/
 body,
 button,
 input,
@@ -452,13 +474,17 @@ p {
 
 h1 {
   font-weight: 500;
-  font-size: 2em; }
-  @media (min-width: 992px) {
+  font-size: 1em; }
+  @media (min-width: 600px) {
     h1 {
-      font-size: 3em; } }
+      font-size: 1.8em; } }
 
 h2 {
   font-size: 2.2em;
+  font-weight: 500; }
+
+h3 {
+  font-size: 1.8em;
   font-weight: 500; }
 
 .whiteText {
@@ -542,6 +568,7 @@ a {
   height: 48px;
   left: 0px;
   top: 0px;
+  background: -webkit-linear-gradient(top, #237D3A 0%, #98C256 100%);
   background: linear-gradient(180deg, #237D3A 0%, #98C256 100%); }
 
 .logo {
@@ -550,28 +577,49 @@ a {
   margin-bottom: 25px; }
 
 .heroHeadingWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
   height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center; }
 
 #homeHero {
   background-image: url("/wp-content/uploads/2019/07/FoxHMS-Building.jpg"); }
 
 .heroHeadingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 100%;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%);
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 20%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0) 100%); }
   @media (min-width: 992px) {
     .heroHeadingContainer {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -ms-grid-row-align: center;
       align-items: center;
       background-image: none; } }
 
 .heroHeadingWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%; }
 
@@ -579,10 +627,16 @@ a {
   padding: 20px; }
 
 #outerWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex; }
 
 #wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   margin: 0 auto; }
 

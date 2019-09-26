@@ -1,4 +1,4 @@
-/* 6.0 Site Typography -------------------------------------------*/
+/* 7.0 Site Typography -------------------------------------------*/
 body,
 button,
 input,
@@ -22,13 +22,17 @@ p{
 }
 h1{
 	font-weight: 500;
-	font-size: 2em;
-	@include breakpoint (laptopScreen) {
-		font-size: 3em;
+	font-size: 1em;
+	@include breakpoint (largeMobileScreen) {
+		font-size: 1.8em;
 	}
 }
 h2{
 	font-size: 2.2em;
+	font-weight: 500;
+}
+h3 {
+	font-size: 1.8em;
 	font-weight: 500;
 }
 .whiteText{
